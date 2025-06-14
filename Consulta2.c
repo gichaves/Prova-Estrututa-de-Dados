@@ -33,7 +33,7 @@ time_t CapturaTimestamp() {
 
         time_t timestamp = mktime(&t);
         if (timestamp == -1) {
-            printf("Data inválida!\n");
+            printf("Data invalida!\n");
         } else {
             return timestamp;
         }
@@ -111,10 +111,10 @@ int main() {
 
     //resultados
     printf("\nData recebida: %s\n", recebido);
-    printf("Sensor utilizado: %s\n", dados[indice].sensor);
-    printf("Data e Hora mais próxima: %s\n", encontrado);
+    printf("Sensor usado: %s\n", dados[indice].sensor);
+    printf("Data e Hora mais proxima: %s\n", encontrado);
     printf("Valor: %.2f\n", dados[indice].value);
-    printf("Diferença de tempo: %ld segundos\n", diferenca);
+    printf("Diferenca de tempo: %ld segundos\n", diferenca);
 
     return 0;
 }
